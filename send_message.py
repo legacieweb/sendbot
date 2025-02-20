@@ -201,10 +201,10 @@ def main():
     "Want an essay done today? visit the link to get quality and plagiarism free essays at the best price!!  https://essayme.odoo.com/essay"
     )       
     # Time configuration
-    start_time_account_1_2 = datetime.now().replace(hour=18, minute=23, second=00, microsecond=0)
-    start_time_account_3 = datetime.now().replace(hour=18, minute=23, second=00, microsecond=0)
-    end_time = datetime.now().replace(hour=11, minute=00, second=00, microsecond=0) + timedelta(days=1)
-    interval = timedelta(hours=0, minutes=40, seconds=00)
+    start_time_account_1_2 = datetime.now().replace(hour=20, minute=00, second=00, microsecond=0)
+    start_time_account_3 = datetime.now().replace(hour=20, minute=00, second=00, microsecond=0)
+    end_time = datetime.now().replace(hour=19, minute=00, second=00, microsecond=0) + timedelta(days=1)
+    interval = timedelta(hours=1, minutes=30, seconds=00)
     current_time = datetime.now()
     if current_time < start_time_account_1_2:
         wait_time = (start_time_account_1_2 - current_time).total_seconds()
